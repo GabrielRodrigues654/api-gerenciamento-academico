@@ -19,3 +19,13 @@ def listar_alunos():
             "email": "joao@email.com"
         }
     ]
+    @app.get("/professores")
+def listar_professores():
+    return [
+        {
+            "id": 1,
+            "nome": "Maria Souza",
+            "email": "maria@email.com",
+            "especialidade": "Banco de Dados"
+        }
+    ]
