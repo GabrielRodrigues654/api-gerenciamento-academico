@@ -12,10 +12,8 @@ pass
 class Aluno(AlunoBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
 
 class ProfessorBase(BaseModel):
 nome: str
@@ -28,10 +26,8 @@ pass
 class Professor(ProfessorBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
 
 class DisciplinaBase(BaseModel):
 nome: str
@@ -45,10 +41,8 @@ pass
 class Disciplina(DisciplinaBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
 
 class TurmaBase(BaseModel):
 disciplina: str
@@ -62,10 +56,8 @@ pass
 class Turma(TurmaBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
 
 class MatriculaBase(BaseModel):
 aluno: str
@@ -78,10 +70,8 @@ pass
 class Matricula(MatriculaBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
 
 class NotaBase(BaseModel):
 aluno: str
@@ -94,7 +84,5 @@ pass
 class Nota(NotaBase):
 id: int
 
-```
 class Config:
     from_attributes = True
-```
