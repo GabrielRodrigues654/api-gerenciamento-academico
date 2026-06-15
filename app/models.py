@@ -27,3 +27,13 @@ class Disciplina(Base):
     codigo = Column(String, unique=True)
     carga_horaria = Column(Integer)
     professor_responsavel = Column(String)
+
+
+class Turma(Base):
+    __tablename__ = "turmas"
+
+    id = Column(Integer, primary_key=True, index=True)
+    disciplina = Column(String)
+    semestre = Column(String)
+    ano = Column(Integer)
+    vagas = Column(Integer)
