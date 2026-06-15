@@ -14,3 +14,16 @@ class Aluno(AlunoBase):
 
     class Config:
         from_attributes = True
+        class ProfessorBase(BaseModel):
+    nome: str
+    email: str
+    especialidade: str
+
+class ProfessorCreate(ProfessorBase):
+    pass
+
+class Professor(ProfessorBase):
+    id: int
+
+    class Config:
+        from_attributes = True
