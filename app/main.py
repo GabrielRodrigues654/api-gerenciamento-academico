@@ -40,3 +40,38 @@ def listar_disciplinas():
             "professor_responsavel": "Maria Souza"
         }
     ]
+@app.get("/turmas")
+def listar_turmas():
+    return [
+        {
+            "id": 1,
+            "disciplina": "Banco de Dados",
+            "semestre": "1",
+            "ano": 2025,
+            "vagas": 40
+        }
+    ]
+
+
+@app.get("/matriculas")
+def listar_matriculas():
+    return [
+        {
+            "id": 1,
+            "aluno": "João Silva",
+            "turma": "Banco de Dados - 2025",
+            "data_matricula": "2025-01-10"
+        }
+    ]
+
+
+@app.get("/notas")
+def listar_notas():
+    return [
+        {
+            "id": 1,
+            "aluno": "João Silva",
+            "disciplina": "Banco de Dados",
+            "nota": 9
+        }
+    ]
