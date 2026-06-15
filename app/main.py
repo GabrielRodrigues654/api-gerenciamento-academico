@@ -29,3 +29,14 @@ def listar_professores():
             "especialidade": "Banco de Dados"
         }
     ]
+    @app.get("/disciplinas")
+def listar_disciplinas():
+    return [
+        {
+            "id": 1,
+            "nome": "Banco de Dados",
+            "codigo": "BD001",
+            "carga_horaria": 80,
+            "professor_responsavel": "Maria Souza"
+        }
+    ]
